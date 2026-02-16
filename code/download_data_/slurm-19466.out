@@ -1,0 +1,13 @@
+[2025-10-21 16:47:02,184] {podaac_data_downloader.py:389} ERROR - Uncaught exception occurred during execution.
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/miniforge3/lib/python3.12/site-packages/subscriber/podaac_data_downloader.py", line 387, in main
+    run()
+  File "/Odyssey/private/t22picar/miniforge3/lib/python3.12/site-packages/subscriber/podaac_data_downloader.py", line 141, in run
+    pa.setup_earthdata_login_auth(edl)
+  File "/Odyssey/private/t22picar/miniforge3/lib/python3.12/site-packages/subscriber/podaac_access.py", line 78, in setup_earthdata_login_auth
+    username, _, password = netrc.netrc().authenticators(endpoint)
+                            ^^^^^^^^^^^^^
+  File "/Odyssey/private/t22picar/miniforge3/lib/python3.12/netrc.py", line 74, in __init__
+    with open(file, encoding="utf-8") as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/homes/t22picar/.netrc'
