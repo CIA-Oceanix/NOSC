@@ -1,0 +1,14 @@
+
+# conda environments:
+#
+base                   /Odyssey/private/t22picar/miniforge3
+4dvarnet-daniel      * /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel
+4dvarnet-starter       /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-starter
+bench_env              /Odyssey/private/t22picar/miniforge3/envs/bench_env
+env-dc-global-ose1     /Odyssey/private/t22picar/miniforge3/envs/env-dc-global-ose1
+woc_env                /Odyssey/private/t22picar/miniforge3/envs/woc_env
+
+Ignoring index file '/Odyssey/private/t22picar/data/era5/era5_2010.grib.5b7b6.idx' older than GRIB file
+slurmstepd-sl-mee-br-213: error: Detected 1 oom_kill event in StepId=14384.0. Some of the step tasks have been OOM Killed.
+srun: error: sl-mee-br-213: task 0: Out Of Memory
+srun: Terminating StepId=14384.0

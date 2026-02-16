@@ -1,0 +1,31 @@
+/Odyssey/private/t22picar/process_data/interpolation/interpolation_era_4th.py:13: FutureWarning: The return type of `Dataset.dims` will be changed to return a set of dimension names in future, in order to be more consistent with `DataArray.dims`. To access a mapping from dimension names to lengths, please use `Dataset.sizes`.
+  nt, ny, nx = map_xth.dims["time"], map_xth.dims["lat"], map_xth.dims["lon"]
+/Odyssey/private/t22picar/data/era5/era5_neu/era5_neu_2010-01-01_2022-12-31_4th.nc
+2010
+2011
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataset.py", line 1482, in _construct_dataarray
+    variable = self._variables[name]
+KeyError: 'u10'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataset.py", line 1581, in __getitem__
+    return self._construct_dataarray(key)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataset.py", line 1484, in _construct_dataarray
+    _, name, variable = _get_virtual_variable(self._variables, name, self.sizes)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataset.py", line 218, in _get_virtual_variable
+    raise KeyError(key)
+KeyError: 'u10'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/interpolation/interpolation_era_4th.py", line 58, in <module>
+    u10[i, :, :] = subset["u10"].values
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataset.py", line 1587, in __getitem__
+    raise KeyError(message) from e
+KeyError: "No variable named 'u10'. Variables on the dataset include ['u10n', 'v10n', 'number', 'step', 'surface', 'valid_time', 'latitude', 'longitude']"
+srun: error: sl-mee-br-206: task 0: Exited with exit code 1
+srun: Terminating StepId=22415.0

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/interpolation/time_float_to_datetime.py", line 16, in <module>
+    res_data_corr = res_data.assign_coords(time=map_4th.time)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/common.py", line 659, in assign_coords
+    data.coords.update(results)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/coordinates.py", line 567, in update
+    self._update_coords(coords, indexes)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/coordinates.py", line 753, in _update_coords
+    dims = calculate_dimensions(variables)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/variable.py", line 3014, in calculate_dimensions
+    raise ValueError(
+ValueError: conflicting sizes for dimension 'time': length 4748 on 'time' and length 4383 on {'lat': 'lat', 'lon': 'lon', 'time': 'u10'}
+srun: error: sl-mee-br-207: task 0: Exited with exit code 1
+srun: Terminating StepId=22563.0

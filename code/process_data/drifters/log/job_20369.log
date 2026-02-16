@@ -1,0 +1,11 @@
+2010
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/drifters/convert_pyo_to_nc_aoml_0m.py", line 176, in <module>
+    make_nc_file(ofile,dvar,odic)
+  File "/Odyssey/private/t22picar/process_data/drifters/convert_pyo_to_nc_aoml_0m.py", line 30, in make_nc_file
+    handler = netCDF4.Dataset(ofile, 'w')
+  File "src/netCDF4/_netCDF4.pyx", line 2470, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2107, in netCDF4._netCDF4._ensure_nc_success
+PermissionError: [Errno 13] Permission denied: '/Odyssey/public/drifters/aoml_00m/drifter_000000001600958_2010.nc'
+srun: error: sl-mee-br-206: task 0: Exited with exit code 1
+srun: Terminating StepId=20369.0

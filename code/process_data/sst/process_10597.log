@@ -1,0 +1,16 @@
+
+# conda environments:
+#
+base                   /Odyssey/private/t22picar/miniforge3
+4dvarnet-daniel      * /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel
+4dvarnet-starter       /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-starter
+bench_env              /Odyssey/private/t22picar/miniforge3/envs/bench_env
+env-dc-global-ose1     /Odyssey/private/t22picar/miniforge3/envs/env-dc-global-ose1
+woc_env                /Odyssey/private/t22picar/miniforge3/envs/woc_env
+
+  File "/Odyssey/private/t22picar/process_data/sst/sst_8th.py", line 2
+    %matplotlib inline
+    ^
+SyntaxError: invalid syntax
+srun: error: sl-mee-br-203: task 0: Exited with exit code 1
+srun: Terminating StepId=10597.0

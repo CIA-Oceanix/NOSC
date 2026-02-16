@@ -1,0 +1,3 @@
+srun: Job step aborted: Waiting up to 242 seconds for job step to finish.
+slurmstepd-sl-mee-br-211: error: *** JOB 26965 ON sl-mee-br-211 CANCELLED AT 2026-01-12T13:09:32 ***
+slurmstepd-sl-mee-br-211: error: *** STEP 26965.0 ON sl-mee-br-211 CANCELLED AT 2026-01-12T13:09:32 ***

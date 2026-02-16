@@ -1,0 +1,10 @@
+
+# conda environments:
+#
+base                   /Odyssey/private/t22picar/miniforge3
+4dvarnet-daniel      * /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel
+4dvarnet-starter       /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-starter
+env-dc-global-ose1     /Odyssey/private/t22picar/miniforge3/envs/env-dc-global-ose1
+woc_env                /Odyssey/private/t22picar/miniforge3/envs/woc_env
+
+/var/spool/slurm/slurmd/job08461/slurm_script: ligne 18: fin de fichier (EOF) prématurée lors de la recherche du « " » correspondant

@@ -1,0 +1,3 @@
+slurmstepd-sl-mee-br-111: error: Detected 1 oom_kill event in StepId=13600.0. Some of the step tasks have been OOM Killed.
+srun: error: sl-mee-br-111: task 0: Out Of Memory
+srun: Terminating StepId=13600.0

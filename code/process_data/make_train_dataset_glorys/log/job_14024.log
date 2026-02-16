@@ -1,0 +1,22 @@
+2017
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataarray.py", line 887, in _getitem_coord
+    var = self._coords[key]
+KeyError: 'thetao'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/make_train_dataset_glorys/make_train_dataset_glorys.py", line 33, in <module>
+    interpolation_glorys_raw_data(year_start,year_end,depth,folder_data,lon_ref,lat_ref)
+  File "/Odyssey/private/t22picar/process_data/make_train_dataset_glorys/utils_data.py", line 23, in interpolation_glorys_raw_data
+    maps_glorys["thetao"] =  maps_glorys_0m["thetao"]
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataarray.py", line 896, in __getitem__
+    return self._getitem_coord(key)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataarray.py", line 890, in _getitem_coord
+    _, key, var = _get_virtual_variable(self._coords, key, dim_sizes)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/core/dataset.py", line 218, in _get_virtual_variable
+    raise KeyError(key)
+KeyError: 'thetao'
+srun: error: sl-mee-br-208: task 0: Exited with exit code 1
+srun: Terminating StepId=14024.0

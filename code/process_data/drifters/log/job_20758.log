@@ -1,0 +1,14 @@
+2010
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/drifters/convert_pyo_to_nc_cmems_0m.py", line 176, in <module>
+    make_nc_file(ofile,dvar,odic)
+  File "/Odyssey/private/t22picar/process_data/drifters/convert_pyo_to_nc_cmems_0m.py", line 83, in make_nc_file
+    var[:] = _tmp
+  File "src/netCDF4/_netCDF4.pyx", line 5490, in netCDF4._netCDF4.Variable.__setitem__
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/netCDF4/utils.py", line 357, in _StartCountStride
+    datashape = broadcasted_shape(shape, datashape)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/netCDF4/utils.py", line 965, in broadcasted_shape
+    return np.broadcast(a, b).shape
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (160,) and arg 1 with shape (160, 161).
+srun: error: sl-mee-br-206: task 0: Exited with exit code 1
+srun: Terminating StepId=20758.0

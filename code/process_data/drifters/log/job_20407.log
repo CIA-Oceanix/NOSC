@@ -1,0 +1,24 @@
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/drifters/convert_pyo_to_nc_aoml_0m.py", line 165, in <module>
+    with gzip.open(ifile, 'rb') as f:
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/gzip.py", line 174, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/Odyssey/private/t22picar/data/drifters/drifter_00m/AOML_GL_00/Drifters_AOML_GL_00m_20230101T000000Z_20240101T000000Z.pyo.gz'
+srun: error: sl-mee-br-206: task 0: Exited with exit code 1
+srun: Terminating StepId=20407.0

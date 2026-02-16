@@ -1,0 +1,45 @@
+
+# conda environments:
+#
+base                   /Odyssey/private/t22picar/miniforge3
+4dvarnet-daniel      * /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel
+4dvarnet-starter       /Odyssey/private/t22picar/miniforge3/envs/4dvarnet-starter
+bench_env              /Odyssey/private/t22picar/miniforge3/envs/bench_env
+env-dc-global-ose1     /Odyssey/private/t22picar/miniforge3/envs/env-dc-global-ose1
+woc_env                /Odyssey/private/t22picar/miniforge3/envs/woc_env
+
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 211, in _acquire_with_cache_info
+    file = self._cache[self._key]
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/lru_cache.py", line 56, in __getitem__
+    value = self._cache[key]
+KeyError: [<class 'netCDF4._netCDF4.Dataset'>, ('/Odyssey/private/t22picar/data/era5_2010-01-01_2020-01-01_8th.nc',), 'r', (('clobber', True), ('diskless', False), ('format', 'NETCDF4'), ('persist', False)), 'c8a76da6-6687-402a-a0ed-bb2d182bed4e']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Odyssey/private/t22picar/process_data/era5/era5_concat.py", line 5, in <module>
+    ds1 = xr.open_dataset(path_era+"era5_2010-01-01_2020-01-01_8th.nc").sel(time=slice("2010-01-01","2019-12-31"))
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/api.py", line 611, in open_dataset
+    backend_ds = backend.open_dataset(
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 649, in open_dataset
+    store = NetCDF4DataStore.open(
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 410, in open
+    return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 357, in __init__
+    self.format = self.ds.data_model
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 419, in ds
+    return self._acquire()
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 413, in _acquire
+    with self._manager.acquire_context(needs_lock) as root:
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 199, in acquire_context
+    file, cached = self._acquire_with_cache_info(needs_lock)
+  File "/Odyssey/private/t22picar/miniforge3/envs/4dvarnet-daniel/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 217, in _acquire_with_cache_info
+    file = self._opener(*self._args, **kwargs)
+  File "src/netCDF4/_netCDF4.pyx", line 2470, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2107, in netCDF4._netCDF4._ensure_nc_success
+FileNotFoundError: [Errno 2] No such file or directory: '/Odyssey/private/t22picar/data/era5_2010-01-01_2020-01-01_8th.nc'
+srun: error: sl-mee-br-209: task 0: Exited with exit code 1
+srun: Terminating StepId=18327.0
