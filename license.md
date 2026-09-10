@@ -1,6 +1,6 @@
 Copyright IMT Atlantique/OceaniX, contributor(s) : T. Picard, R. Fablet, S. Ouala, P. Haslée  (IMT Atlantique)
 
-Contact person: theo.picard@ns-paris-saclay.fr
+Contact person: theo.picard@ens-paris-saclay.fr
 
 CeCILL-C FREE SOFTWARE LICENSE AGREEMENT
 
